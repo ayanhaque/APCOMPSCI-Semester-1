@@ -29,9 +29,7 @@ public class RudeAI
 		
 		String fun = keyboard.nextLine();
 		
-		System.out.println("Only nerds like to " + fun + " Don't you have any interesting hobbies?");
-		
-		keyboard.nextLine();
+		System.out.println("Only nerds like to " + fun + ". Don't you have any interesting hobbies?");
 		
 		System.out.println("What kind of music do you like? ");
 		
