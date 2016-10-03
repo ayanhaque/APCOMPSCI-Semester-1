@@ -13,14 +13,24 @@ public class Rectangle
        l = kb.nextDouble();
        System.out.println("Enter the width: ");
        w = kb.nextDouble(); 
+       //variables
+       //int width = 10;
+       //int height = 15;
        
+       //method call(parameters)
+       //calcPerim(width, height);
        calcPerim();
        print();
+       
+       //print statement
+       //System.out.println("Your perimeter is " + calcPerim() + " ft.");
    }
    
+   //public static void calcPerim(int w, int h)
    public static void calcPerim()
    {
        perimeter = 2 * (l + w);
+       //return 2*(w + h);
    }
    
    public static void print()
