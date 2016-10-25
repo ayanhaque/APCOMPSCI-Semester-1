@@ -27,6 +27,7 @@ public class User_Pass
    		else 
 		{
 			System.out.println("Username and Password are incorrect!");
+			passCheck();
 		}
     }
 }
