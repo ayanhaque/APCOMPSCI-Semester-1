@@ -1,5 +1,6 @@
 import java.util.Scanner;
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class Box
 {
    public static void main(String[]args)
@@ -15,6 +16,8 @@ public class Box
 }
   
 =======
+=======
+>>>>>>> origin/master
 public class Reverse
 {
 	public static void main(String[]args)
@@ -28,5 +31,9 @@ public class Reverse
 			System.out.println(word.substring(i,0));
 		}
 	}
+<<<<<<< HEAD
+}
+>>>>>>> origin/master
+=======
 }
 >>>>>>> origin/master
