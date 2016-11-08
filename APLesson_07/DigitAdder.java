@@ -8,7 +8,7 @@ public class DigitAdder
     public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
-		System.out.println("Please enter a number");
+		System.out.println("Please enter a number: ");
 		number = kb.nextInt();
 		sum = 0;
 		System.out.println("The sum of the digits in " + number + " is " + sumDigits(sum, number));
