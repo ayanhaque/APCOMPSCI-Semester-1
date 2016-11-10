@@ -1,4 +1,3 @@
-package APLesson_04_3;
 import java.util.Scanner;
 public class Average_04_3
 {
