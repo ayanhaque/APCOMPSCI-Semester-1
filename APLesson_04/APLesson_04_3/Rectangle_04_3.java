@@ -1,4 +1,3 @@
-package APLesson_04_3;
 import java.util.Scanner;
 public class Rectangle_04_3
 {
