@@ -25,6 +25,6 @@ public class Compound_Interest
     
     public static double payment(double r, double P, double n, double t)
     {
-        return P * Math.pow((1 + r/(n*12)), (n*12)*t);
+        return (P * (Math.pow(1+(r/n), n*t))/(12*t));
     }
 }
