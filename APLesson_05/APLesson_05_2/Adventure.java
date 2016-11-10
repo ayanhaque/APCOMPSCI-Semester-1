@@ -1,4 +1,3 @@
-package APLesson_05_2;
 import java.util.Scanner;
 public class Adventure
 {
