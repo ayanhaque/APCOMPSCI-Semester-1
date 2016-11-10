@@ -1,4 +1,3 @@
-package APLesson_05_1;
 import java.util.Scanner;
 public class BMI
 {
