@@ -1,5 +1,3 @@
-package APLesson_4_1;
-
 import java.util.Scanner;
 public class Subwoofer
 {
