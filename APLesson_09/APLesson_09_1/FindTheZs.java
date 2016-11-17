@@ -1,13 +1,14 @@
-package APLesson_09_1;
 import java.util.Scanner;
 public class FindTheZs
 {
    static String [] words;
    public static void main(String[]args)
    {
-       String [] words = new String[5];
+       words = new String[5];
        fillArray(words);
        
+	   System.out.println("");
+	   
        System.out.println("For the following words..."); 
        printArray(words);
        System.out.println("\n Only " + hasZs(words) + " contain(s) the letter z.");
@@ -15,10 +16,10 @@ public class FindTheZs
    public static void fillArray(String [] words)
    {
        Scanner kb = new Scanner(System.in);
-       System.out.println("Please enter 5 words");
-       for(String word : words)
+       System.out.println("Please enter 5 words: ");
+       for(int i = 0; i < words.length; i++)
        {
-           word = kb.next();
+           words[i] = kb.next();
        }
    }
    public static void printArray(String [] words)
@@ -26,16 +27,16 @@ public class FindTheZs
        for(String word : words)
            System.out.print(word + " ");
    }
-   public static int hasZs(String [] words)
+   public static String hasZs(String [] words)
    {
-       String Zs = next();
+       String zs = "";
        for(String word : words)
        {
-           if(words.indexOf("z") >= 0)
+           if(word.indexOf("z") >= 0)
            {
-               Zs += word;
+               zs += (word + " ");
            }
        }
-       return Zs;
+       return zs;
    }
 }
