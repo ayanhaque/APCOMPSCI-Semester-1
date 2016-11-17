@@ -1,4 +1,3 @@
-package APLesson_09_1;
 public class BiggestNumber
 {
    static int [] numbers;
