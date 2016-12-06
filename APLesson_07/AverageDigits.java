@@ -3,8 +3,7 @@ public class AverageDigits
 {
 	static int number;
 	static int digits;
-	static int average;
-	static int num;
+	static double average;
 	
     public static void main(String[]args)
 	{
@@ -13,19 +12,20 @@ public class AverageDigits
 		number = kb.nextInt();
 		digits = 0;
 		average = 0;
-		num = number;
+		avDigits();
 		
-		System.out.println("The average of the digits in " + number + " is " + avDigits(number, average, digits));
+		System.out.println("The average of the digits in " + number + " is " + average);
 	}
 	
-	static int avDigits(int number, int average, int digits)
+	public static void avDigits()
 	{
-		while(num > 0)
+		int num = number;
+	    while(num > 0)
 		{
 			digits += 1;
-			average += digits%10;
+			average += (num%10);
 			num /= 10;
 		}
-		return average/digits;
+		average = average/digits;
 	}
 }
