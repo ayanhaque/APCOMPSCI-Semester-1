@@ -17,5 +17,7 @@ public class DistanceRunner
        
        Distance object = new Distance(x1, y1, x2, y2);
        System.out.println("The distance between points (" + object.getXOne() + ", " + object.getYOne() + ") and (" + object.getXTwo() + ", " + object.getYTwo() + ") is " + object.getDist());
+	   object.setValues(1, 2, 3, 4);
+	   System.out.println("The distance between points (" + object.getXOne() + ", " + object.getYOne() + ") and (" + object.getXTwo() + ", " + object.getYTwo() + ") is " + object.getDist());
    }
 }

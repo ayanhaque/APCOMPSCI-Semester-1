@@ -22,7 +22,7 @@ public class Distance
         distance = 0;
     }
     
-    public void setDistance(int x1, int y1, int x2, int y2)
+    public void setValues(int x1, int y1, int x2, int y2)
     {
         xOne = x1;
         yOne = y1;
