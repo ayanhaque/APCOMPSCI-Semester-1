@@ -1,4 +1,4 @@
-import static java.lang.Math.*;
+import java.lang.Math.*;
 public class MilesPerHour
 {
 	private int distance, hours, minutes;
@@ -28,15 +28,15 @@ public class MilesPerHour
 		minutes = mins;
 	}
 	
-	public getDist();
+	public int getDist()
 	{
 		return distance;
 	}
-	public getHrs()
+	public int getHrs()
 	{
 		return hours;
 	}
-	public getMins()
+	public int getMins()
 	{
 		return minutes;
 	}
