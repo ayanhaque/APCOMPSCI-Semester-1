@@ -2,14 +2,14 @@ public class Human
 {
 	private String hair, eyes, skin;
 	
-	public Car()
+	public Human()
 	{
 		hair = "";
 		eyes = "";
 		skin = "";
 	}
 	
-	public Car(String h, String e, String s)
+	public Human(String h, String e, String s)
 	{
 		hair = h;
 		eyes = e;
