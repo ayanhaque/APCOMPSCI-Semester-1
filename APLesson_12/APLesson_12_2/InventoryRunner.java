@@ -21,7 +21,7 @@ public class InventoryRunner
 			System.out.println("Enter the category:");
 			String category = kb.next();
 			System.out.println("Enter the price:");
-			in price = kb.nextInt();
+			int price = kb.nextInt();
 			Inventory object1 = new Inventory(manufacturer, name, category, price);
 			System.out.println(object1);
 		}
