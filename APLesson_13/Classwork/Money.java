@@ -1,5 +1,3 @@
-package Classwork;
-
 public class Money
 {
 	private String name;
