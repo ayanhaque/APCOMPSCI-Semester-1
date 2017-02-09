@@ -1,5 +1,3 @@
-package Classwork;
-
 public class Coin extends Money
 {
 	private double weight;
