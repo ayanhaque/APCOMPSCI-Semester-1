@@ -1,5 +1,3 @@
-package Classwork;
-
 public class Bill extends Money
 {
 	private String face;
