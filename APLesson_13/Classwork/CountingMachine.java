@@ -1,3 +1,5 @@
+package Classwork;
+
 import java.util.ArrayList;
 public class CountingMachine
 {
@@ -12,7 +14,7 @@ public class CountingMachine
 		inventory.add(new Bill("Five", "Lincoln", 05.00));
 		inventory.add(new Bill("Ten", "Hamilton", 10.00));
 		inventory.add(new Bill("Twenty", "Jackson", 20.00));
-		inventory.add(new Coin("Hundred", "Franklin", 100.00));
+		inventory.add(new Bill("Hundred", "Franklin", 100.00));
 		
 		for(Money x : inventory)
 		{
