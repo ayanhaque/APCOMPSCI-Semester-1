@@ -1,4 +1,3 @@
-package APLesson_13_1;
 public class GameSystem
 {
     private String platform;
