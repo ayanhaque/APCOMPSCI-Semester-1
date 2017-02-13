@@ -1,6 +1,6 @@
 public class GameSystem
 {
-    private String platform;
+    private String platform; 
     private int serialNo;
     
     public GameSystem()
