@@ -1,4 +1,3 @@
-package APLesson_13_1;
 public class PlayStation extends Console
 {
     public PlayStation()
