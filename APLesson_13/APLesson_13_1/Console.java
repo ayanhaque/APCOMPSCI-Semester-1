@@ -1,4 +1,3 @@
-package APLesson_13_1;
 public abstract class Console extends GameSystem
 {
     public Console()
