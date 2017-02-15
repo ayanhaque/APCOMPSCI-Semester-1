@@ -1,12 +1,7 @@
 public class GameSystem
 {
-<<<<<<< HEAD
     private String platform; 
     private int serialNo;
-=======
-	private String platform;
-	private int serialNo;
->>>>>>> origin/master
     
 	public GameSystem()
 	{
@@ -27,10 +22,5 @@ public class GameSystem
    	public int getSerialNo()
     	{
 		return serialNo;
-<<<<<<< HEAD
 	}
 }
-=======
-    	}
-}
->>>>>>> origin/master
