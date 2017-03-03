@@ -16,7 +16,7 @@ public class Honda implements Location
 	
 	public int getID()
 	{
-		return (int)(10000000 * Math.random()+1);
+		return (int)(Math.random() * 1000000) + 1;
 	}
 	
 	public void move(double xx, double yy)
