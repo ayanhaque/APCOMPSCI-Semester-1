@@ -17,7 +17,7 @@ public class GMC implements Location
 	
 	public int getID()
 	{
-		return (int)(Math.random()*1000000) + 1;
+		return (int)(Math.random() * 1000000) + 1;
 	}
 	
 	public void move(double xx, double yy)
