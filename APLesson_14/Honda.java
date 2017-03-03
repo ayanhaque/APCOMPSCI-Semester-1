@@ -25,7 +25,7 @@ public class Honda implements Location
 		locate[1] = yy;
 	}
 	
-	public double[] getLoc()
+	public double [] getLoc()
 	{
 		return locate;
 	}
