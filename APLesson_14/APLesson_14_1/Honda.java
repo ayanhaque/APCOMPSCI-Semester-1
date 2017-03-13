@@ -1,4 +1,3 @@
-package APLesson_14_1;
 import java.util.Arrays;
 public class Honda extends Car
 {
@@ -22,7 +21,7 @@ public class Honda extends Car
     }
     public int getID()
     {
-        return (int)(Math.random()*1000000) + 1;
+        return (int)(Math.random() * 1000000) + 1;
     }
     public double [] getLoc()
     {

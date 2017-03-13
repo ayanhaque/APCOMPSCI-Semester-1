@@ -1,4 +1,3 @@
-package APLesson_14_1;
 import java.util.Arrays;
 public class Toyota extends Car
 {
