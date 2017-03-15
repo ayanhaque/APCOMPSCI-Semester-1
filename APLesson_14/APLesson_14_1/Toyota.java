@@ -7,13 +7,17 @@ public class Toyota extends Car
     {
         loc = "";
     }
-    public Toyota(String l)
+    public Toyota(String lcte)
     {
-        loc = l;
+        loc = lcte;
     }
-    public void move (String l)
+    public void move (double x, double y)
     {
-        loc = l;
+        String [] locate = loc.split(", ");
+		double [] lcte = new double[2];
+		lcte[0] = Double.parseDouble(locate[0]) + x;
+		lcte[1] = Double.parseDouble(locate[1]) + y;
+		loc = "" + lcte[0] + ", " + lcte[1];
     }
     public int getID()
     {

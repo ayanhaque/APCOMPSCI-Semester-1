@@ -16,8 +16,8 @@ public class Honda extends Car
     
     public void move(double xx, double yy)
     {
-        locate [0] = xx;
-        locate [1] = yy;
+        locate [0] += xx;
+        locate [1] += yy;
     }
     public int getID()
     {

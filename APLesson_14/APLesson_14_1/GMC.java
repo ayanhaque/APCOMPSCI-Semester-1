@@ -17,8 +17,8 @@ public class GMC extends Car
     
     public void move(double xx, double yy)
     {
-        x = xx;
-        y = yy;
+        x += xx;
+        y += yy;
     }
     
     public int getID()
