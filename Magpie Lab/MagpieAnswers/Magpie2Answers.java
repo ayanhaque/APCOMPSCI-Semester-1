@@ -1,4 +1,4 @@
-public class Magpie2
+public class Magpie2Answers
 {
 	/** Get a default greeting @return a greeting*/
 	public String getGreeting()
@@ -23,13 +23,13 @@ public class Magpie2
 		 * 	an empty String?" */
 		if (statement.length() == 0)
 		{
-			return "Say something, please.";
+			response = "Say something, please.";
 		}
 
 		/** To be completed in Exercise_02:
 		 * 	Modify the following code to use the findKeyword
 		 * 	Method (details in "Exercise_02" below. */
-		if (statement.indexOf("no") == 0)
+		else if (findKeyword(statement, "no") >= 0)
 		{
 			response = "Why so negative?";
 		}
@@ -65,6 +65,10 @@ public class Magpie2
 		{
 			response = "He sounds like a pretty dank teacher.";
 		}
+		else if (statement.trim().length() == 0)
+		{
+			response = "Say something, please.";
+		}
 		else
 		{
 			response = getRandomResponse();
@@ -91,27 +95,33 @@ public class Magpie2
 					set before = the slot in phrase before psn */
 
 				//====>code here
-				String phrase = statement.trim().toLowerCase();
-				int psn = phrase.indexOf(goal, startPos);
 				
-				String before = "";
-				String after = "";
-				while(psn >= 0)
-				{
-					if(psn > 0)
-					{
-						before = Character.toString(phrase.charAt(psn-1));
-					}
-					if(phrase.length() > goal.length() + psn)
-					{
-						after = Character.toString(phrase.charAt(psn+goal.length()));
-					}
-					if(before.compareTo("a") < 0 && after.compareTo("z") < 0)
-					{
-						return psn;
-					}
-					psn = phrase.indexOf(goal, psn+1);
-				}
+		String phrase = statement.trim().toLowerCase();
+		goal = goal.toLowerCase();
+
+		int psn = phrase.indexOf(goal, startPos);
+
+		while (psn >= 0)
+		{
+
+			String before = " ", after = " ";
+			if (psn > 0)
+			{
+				before = phrase.substring(psn - 1, psn);
+			}
+			if (psn + goal.length() < phrase.length())
+			{
+				after = phrase.substring(psn + goal.length(),
+										psn + goal.length() + 1);
+			}
+
+			if (((before.compareTo("a") < 0) || (before.compareTo("z") > 0))
+					&& ((after.compareTo("a") < 0) || (after.compareTo("z") > 0)))
+			{
+				return psn;
+			}
+			psn = phrase.indexOf(goal, psn + 1);
+		}
 
 				/*check if you can fit goal into the rest of phrase - no need to
 				proceed otherwise
