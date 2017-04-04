@@ -1,6 +1,8 @@
 import java.util.Arrays;
 public class Toyota extends Car
 {
+    public Toyota()
+    {}
     public Toyota(String lcte)
     {
         location = new double[2];
