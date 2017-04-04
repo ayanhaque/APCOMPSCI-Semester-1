@@ -4,9 +4,11 @@ public class Driver
    public static void main(String[]args)
    {
        double one = (Math.random() * 100) + 1;
-	   double two = (Math.random() * 100) + 1;
+       double two = (Math.random() * 100) + 1;
+	
 	   ArrayList<Location> locate = new ArrayList<>();
-       double[] honLoc = {5, 6};
+       
+	   double[] honLoc = {5, 6};
        locate.add(new Honda(honLoc));
        locate.add(new Toyota("8, 9"));
        locate.add(new GMC(3, 8));
@@ -47,11 +49,11 @@ public class Driver
 
     public static double getDistance(double[] car, double[] home)
 	{
-       return Math.sqrt((Math.pow(car[0] - home[0], 2)+ Math.pow(car[1] - home[1], 2)));
+       		return Math.sqrt((Math.pow(car[0] - home[0], 2)+ Math.pow(car[1] - home[1], 2)));
 	}
 
     public static String getLocation(double[] loc)
 	{
-       return loc[0] + ", " + loc[1];
+       		return loc[0] + ", " + loc[1];
 	}
 }
