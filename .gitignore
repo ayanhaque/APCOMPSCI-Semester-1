@@ -45,4 +45,19 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+<<<<<<< Updated upstream
 *.class
+=======
+
+*.class
+
+*.bluej
+
+*.ctxt
+
+*.TXT
+>>>>>>> Stashed changes
+
+*.pdf
+
+*.pdf
