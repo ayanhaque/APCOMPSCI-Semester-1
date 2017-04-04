@@ -1,4 +1,4 @@
-public abstract class Car implements Location
+public class Car implements Location
 {
     	public double[] location;
 	public final int ID = (int)(Math.random() * 1000000) + 1;
