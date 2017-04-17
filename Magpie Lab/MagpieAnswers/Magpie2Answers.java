@@ -74,8 +74,7 @@ public class Magpie2Answers
 		{
 			response = transformIWantToStatement(statement);
 		}
-
-
+		
 		else
 		{
 		// Look for a two word (you <something> me)
@@ -83,8 +82,7 @@ public class Magpie2Answers
 		int psn = findKeyword(statement, "you", 0);
 
 
-			if (psn >= 0
-				&& findKeyword(statement, "me", psn) >= 0)
+			if (psn >= 0 && findKeyword(statement, "me", psn) >= 0)
 			{
 				response = transformYouMeStatement(statement);
 			}
@@ -95,7 +93,54 @@ public class Magpie2Answers
 		}
 		return response;
 	}
+	
+	/**
+	* Take a statement with "I want to <something>." and transform it into
+	* "What would it mean to <something>?"
+	* @param statement the user statement, assumed to contain "I want to"
+	* @return the transformed statement
+	*/
+	private String transformIWantToStatement(String statement)
+	{
+	/**
+	* trim the statement
+	* variable lastChar = last character in statement
+	* if lastChar is a period...
+	*        remove the last character from statement
+	*
+	* Set new int psn to the result from...
+	*        findKeyword() method @param statement, goal is "I want to "
+	* Set new String restOfStatement to the rest of statement after the
+	* "I want to ".
+	* /
+	* return "What would it mean to" + restOfStatement; **/
+	}	
 
+
+	/**
+	* Take a statement with "you <something> me" and transform it into
+	* "What makes you think that I <something> you?"
+	* @param statement the user statement, assumed to contain "you" followed by "me"
+	* @return the transformed statement
+	*/
+	private String transformYouMeStatement(String statement)
+	{
+	/**
+	* trim the statement
+	* Set new String lastChar to the last character in statement
+	* if lastChar is a period...
+	*        remove the period
+	*
+	* Set new int psnOfYou to the result of findKeyword
+	*        @param statement and "you"
+	* Set new int psnOfMe to the result of findKeyword
+	*      @param statement, "me", and psnOfYou + 3
+	* Set new String restOfStatement to the rest of statement after "You" + 3,
+	* and before "me".
+	* return "What makes you think that I " + restOfStatement + "you?"
+	* */
+	}
+	
 	/** Ex_02: The findKeyword() Method...
 	 * ========================================================= */
 	private int findKeyword(String statement, String goal, int startPos)
@@ -124,6 +169,7 @@ public class Magpie2Answers
 		while (psn >= 0)
 		{
 
+			/*why the fk did i fkn ask*/
 			String before = " ", after = " ";
 			if (psn > 0)
 			{
