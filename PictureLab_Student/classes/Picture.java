@@ -97,6 +97,49 @@ public class Picture extends SimplePicture
       }
     }
   }
+  /** Method to set red and green to 0 to keep blue */
+  public void keepOnlyBlue()
+  {
+	Pixel[][] pixels = this.getPixels2D();
+    for (Pixel[] rowArray : pixels)
+    {
+      for (Pixel pixelObj : rowArray)
+      {
+        pixelObj.setRed(0);
+		pixelObj.setGreen(0);
+      }
+    }
+  }
+  /** Method that negates all pixels in a picture */
+  public void negate()
+  {
+	  Pixel[][] pixels = this.getPixels2D();
+	  for(Pixel[] rowArray : pixels)
+	  {
+		  for(Pixel pixelObj : rowArray)
+		  {
+			  pixelObj.setRed(255 - pixelObj.getRed());
+			  pixelObj.setBlue(255 - pixelObj.getBlue());
+			  pixelObj.setGreen(255 - pixelObj.getGreen());
+		  }
+	  }
+  }
+  
+  /** Method that turns the picture into shades of gray */
+  public void grayscale()
+  {
+	  Pixel[][] pixels = this.getPixels2D();
+	  for(Pixel[] rowArray : pixels)
+	  {
+		  for(Pixel pixelObj : rowArray)
+		  {
+			  int avg = (pixelObj.getRed() + pixelObj.getBlue() + pixelObj.getGreen())/3;
+			  pixelObj.setRed(avg);
+			  pixelObj.setBlue(avg);
+			  pixelObj.setGreen(avg);
+		  }
+	  }
+  }
   
   /** Method that mirrors the picture around a 
     * vertical mirror in the center of the picture
