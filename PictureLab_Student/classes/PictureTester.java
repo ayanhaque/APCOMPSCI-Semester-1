@@ -83,7 +83,13 @@ public class PictureTester
     temple.mirrorTemple();
     temple.explore();
   }
-  
+  /** Method to test myCollage */
+  public static void testMyCollage()
+  {
+	  Picture canvas = new Picture("7inX95in.jpg");
+	  canvas.myCollage();
+	  canvas.explore();
+  }
   /** Method to test the collage method */
   public static void testCollage()
   {
@@ -98,6 +104,13 @@ public class PictureTester
     Picture swan = new Picture("swan.jpg");
     swan.edgeDetection(10);
     swan.explore();
+  }
+  /** Method to test edgeDetection2 */
+  public static void testEdgeDetection2()
+  {
+	  Picture swan = new Picture("swan.jpg");
+	  swan.edgeDetection2(30);
+	  swan.explore();
   }
   
   /** Main method for testing.  Every class can have a main
@@ -117,15 +130,16 @@ public class PictureTester
     //testMirrorVertical();
 	//testMirrorVerticalRightToLeft();
 	//testMirrorHorizontal();
-	testMirrorHorizontalBotToTop();
+	//testMirrorHorizontalBotToTop();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
+	//testMyCollage();
     //testCollage();
     //testCopy();
     //testEdgeDetection();
-    //testEdgeDetection2();
+    testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
