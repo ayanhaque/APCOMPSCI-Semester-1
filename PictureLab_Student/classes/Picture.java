@@ -310,7 +310,6 @@ public class Picture extends SimplePicture
 	  this.mirrorHorizontal();
 	  this.mirrorVertical();
 	  this.write("collage2.jpg");
-
   }
   /** Method to create a collage of several pictures */
   public void createCollage()
@@ -357,31 +356,35 @@ public class Picture extends SimplePicture
   }
   public void edgeDetection2(int edgeDist)
   {
-	//Pixel leftPixel = null;
-    //Pixel rightPixel = null;
+	Pixel leftPixel = null;
+    Pixel rightPixel = null;
 	Pixel topPixel = null;
 	Pixel bottomPixel = null;
     Pixel[][] pixels = this.getPixels2D();
-    //Color rightColor = null;
+    Color rightColor = null;
 	Color topColor = null;
     for (int row = 0; row < pixels.length; row++)
     {
       for (int col = 0; 
            col < pixels[0].length-1; col++)
       {
-        //leftPixel = pixels[row][col];
-        //rightPixel = pixels[row][col+1];
+        leftPixel = pixels[row][col];
+        rightPixel = pixels[row][col+1];
 		topPixel = pixels[row][col];
 		bottomPixel = pixels[row+1][col];
-        //rightColor = rightPixel.getColor();
+        rightColor = rightPixel.getColor();
 		topColor = topPixel.getColor();
         if (bottomPixel.colorDistance(topColor) > 
             edgeDist)
-          //leftPixel.setColor(Color.BLACK);
-		  bottomPixel.setColor(Color.BLACK);
+		{
+			leftPixel.setColor(Color.BLACK);
+			bottomPixel.setColor(Color.BLACK);
+		}
         else
-          //leftPixel.setColor(Color.WHITE);
-		  bottomPixel.setColor(Color.WHITE);
+		{
+			leftPixel.setColor(Color.WHITE);
+			bottomPixel.setColor(Color.WHITE);
+		}
       }
     }
   }
