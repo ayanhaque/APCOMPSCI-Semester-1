@@ -20,7 +20,7 @@ public class CompSciFinal
 													"\n\tElectrical Engineering" +
 													"\n\tEnglish" +
 													"\n\tEnvironmental Science" +
-													"\n\tGame Design"
+													"\n\tGame Design" +
 													"\n\tHistory" +
 													"\n\tJournalism" +
 													"\n\tMechanical Engineering" +
@@ -30,7 +30,7 @@ public class CompSciFinal
 													"\n\tPsychology" +
 													"\n\tStatistics" +
 													"\n\tTheatre");
-		System.out.println("Please pick a major: ");
+		System.out.println("Please pick a major (input exactly as above): ");
 		String major = kb.nextLine();
 		
 		Sorting object = new Sorting(major);
