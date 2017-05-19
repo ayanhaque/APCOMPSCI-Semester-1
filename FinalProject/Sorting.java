@@ -3,6 +3,7 @@ public class Sorting
 	private String major;
 	private String category;
 	private String courses;
+	private String career;
 	
 	public Sorting()
 	{
@@ -15,6 +16,7 @@ public class Sorting
 		major= m;
 		category = category(major);
 		courses = courses(category);
+		career = career(major);
 	}
 	
 	public String getMajor()
@@ -30,6 +32,11 @@ public class Sorting
 	public String getCourses()
 	{
 		return courses;
+	}
+	
+	public String getCareer()
+	{
+		return career;
 	}
 	
 	public String category(String major)
@@ -160,6 +167,63 @@ public class Sorting
 		return "";
 	}
 	
+	public String career(String m)
+	{
+		if(m.equals("Accounting"))
+			return "";
+		else if (m.equals("Advertising and Marketing"))
+			return "";
+		else if (m.equals("Animation"))
+			return "";
+		else if (m.equals("Applied Mathematics"))
+			return "";
+		else if (m.equals("Biology"))
+			return "";
+		else if (m.equals("Biomathematics"))
+			return "";
+		else if (m.equals("Biomedical Engineering"))
+			return "";
+		else if (m.equals("Business Administration"))
+			return "";
+		else if (m.equals("Chemistry"))
+			return "";
+		else if (m.equals("Computer Programming"))
+			return "";
+		else if (m.equals("Computer Science"))
+			return "";
+		else if (m.equals("Criminal Justice"))
+			return "";
+		else if (m.equals("Economics"))
+			return "";
+		else if (m.equals("Electrical Engineering"))
+			return "";
+		else if (m.equals("English"))
+			return "";
+		else if (m.equals("Environmental Science"))
+			return "";
+		else if (m.equals("Game Design"))
+			return "";
+		else if (m.equals("History"))
+			return "";
+		else if (m.equals("Journalism"))
+			return "";
+		else if (m.equals("Mechanical Engineering"))
+			return "";
+		else if (m.equals("Photography"))
+			return "";
+		else if (m.equals("Physics"))
+			return "";
+		else if (m.equals("Political Science"))
+			return "";
+		else if (m.equals("Psychology"))
+			return "";
+		else if (m.equals("Statistics"))
+			return "";
+		else if (m.equals("Theatre"))
+			return "";
+		return "";
+	}
+
 	public String toString()
 	{
 		return "Major: " + getMajor() + "\nCategory: " + getCategory() + "\nCourse List: \n" + getCourses();
