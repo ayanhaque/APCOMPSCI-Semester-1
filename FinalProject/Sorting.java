@@ -170,7 +170,6 @@ public class Sorting
 	public String career(String m)
 	{
 		if(m.equals("Accounting"))
-<<<<<<< HEAD
 			return "\n\tBudget Analyst" + 
 				   "\n\tForensic Accountant" + 
 				   "\n\tTax Accountant";
@@ -304,59 +303,6 @@ public class Sorting
 				   "\n\tDirector" + 
 				   "\n\tPlaywright" + 
 				   "\n\tStage Manager";
-=======
-			return "";
-		else if (m.equals("Advertising and Marketing"))
-			return "";
-		else if (m.equals("Animation"))
-			return "";
-		else if (m.equals("Applied Mathematics"))
-			return "";
-		else if (m.equals("Biology"))
-			return "";
-		else if (m.equals("Biomathematics"))
-			return "";
-		else if (m.equals("Biomedical Engineering"))
-			return "";
-		else if (m.equals("Business Administration"))
-			return "";
-		else if (m.equals("Chemistry"))
-			return "";
-		else if (m.equals("Computer Programming"))
-			return "";
-		else if (m.equals("Computer Science"))
-			return "";
-		else if (m.equals("Criminal Justice"))
-			return "";
-		else if (m.equals("Economics"))
-			return "";
-		else if (m.equals("Electrical Engineering"))
-			return "";
-		else if (m.equals("English"))
-			return "";
-		else if (m.equals("Environmental Science"))
-			return "";
-		else if (m.equals("Game Design"))
-			return "";
-		else if (m.equals("History"))
-			return "";
-		else if (m.equals("Journalism"))
-			return "";
-		else if (m.equals("Mechanical Engineering"))
-			return "";
-		else if (m.equals("Photography"))
-			return "";
-		else if (m.equals("Physics"))
-			return "";
-		else if (m.equals("Political Science"))
-			return "";
-		else if (m.equals("Psychology"))
-			return "";
-		else if (m.equals("Statistics"))
-			return "";
-		else if (m.equals("Theatre"))
-			return "";
->>>>>>> origin/master
 		return "";
 	}
 
