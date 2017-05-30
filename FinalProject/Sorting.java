@@ -299,7 +299,7 @@ public class Sorting
 				   "\n\tBiostatistician" + 
 				   "\n\tStatistical Consultant";
 		else if (m.equals("Theatre"))
-			return "\n/tDancer" + 
+			return "\n\tDancer" + 
 				   "\n\tDirector" + 
 				   "\n\tPlaywright" + 
 				   "\n\tStage Manager";
@@ -308,6 +308,6 @@ public class Sorting
 
 	public String toString()
 	{
-		return "\nMajor: " + getMajor() + "\n\nCategory: " + getCategory() + "\n\nCourse List: \n" + getCourses() + "\n\nPotential Careers: " + getCareer();
+		return "________________________________\nMajor: " + getMajor() + "\n\nCategory: " + getCategory() + "\n\nCourse List: \n" + getCourses() + "\n\nPotential Careers: " + getCareer();
 	}
 }
